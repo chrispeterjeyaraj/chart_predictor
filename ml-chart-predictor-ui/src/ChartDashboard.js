@@ -137,59 +137,44 @@ const ChartDashboard = () => {
   // Example datasets
   const collections = [
     {
+      name: 'User Ages',
+      data: [
+        { age: 25, count: 10 },
+        { age: 30, count: 20 },
+        { age: 35, count: 15 }
+      ]
+    },
+    {
+        name: 'Employee Data',
+        data: [
+            {'name': 'Alice', 'age': 25, 'salary': 50000.0, 'is_manager': true, 'remarks': 'Good'},
+            {'name': 'Bob', 'age': 30, 'salary': 55000.5, 'is_manager': false, 'remarks': 'Average'},
+            {'name': 'Charlie', 'age': 35, 'salary': 60000.5, 'is_manager': true, 'remarks': 'Excellent'},
+            {'name': 'David', 'age': 40, 'salary': 65000.0, 'is_manager': false, 'remarks': 'None'}
+        ]
+    },
+    {
       name: 'Sales Orders',
       data: [{
-        "ORDERNUMBER": "10107",
+        "CATEGORY": "Motorcycles",
         "QUANTITYORDERED": "30",
+        "ORDERNUMBER": "10107",
         "PRICEEACH": "95.7",
-        "ORDERLINENUMBER": "2",
         "SALES": "2871",
         "ORDERDATE": "2/24/2003 0:00",
         "STATUS": "Shipped",
-        "QTR_ID": "1",
-        "MONTH_ID": "2",
-        "YEAR_ID": "2003",
-        "PRODUCTLINE": "Motorcycles",
         "MSRP": "95",
-        "PRODUCTCODE": "S10_1678",
-        "CUSTOMERNAME": "Land of Toys Inc.",
-        "PHONE": "2125557818",
-        "ADDRESSLINE1": "897 Long Airport Avenue",
-        "ADDRESSLINE2": "",
-        "CITY": "NYC",
-        "STATE": "NY",
-        "POSTALCODE": "10022",
-        "COUNTRY": "USA",
-        "TERRITORY": "NA",
-        "CONTACTLASTNAME": "Yu",
-        "CONTACTFIRSTNAME": "Kwai",
-        "DEALSIZE": "Small"
+        "COUNTRY": "USA"
       },{
-        "ORDERNUMBER": "10103",
+        "CATEGORY": "Classic Cars",
         "QUANTITYORDERED": "26",
+        "ORDERNUMBER": "10103",
         "PRICEEACH": "100",
-        "ORDERLINENUMBER": "11",
         "SALES": "5404.62",
         "ORDERDATE": "1/29/2003 0:00",
         "STATUS": "Shipped",
-        "QTR_ID": "1",
-        "MONTH_ID": "1",
-        "YEAR_ID": "2003",
-        "PRODUCTLINE": "Classic Cars",
         "MSRP": "214",
-        "PRODUCTCODE": "S10_1949",
-        "CUSTOMERNAME": "Baane Mini Imports",
-        "PHONE": "07-98 9555",
-        "ADDRESSLINE1": "Erling Skakkes gate 78",
-        "ADDRESSLINE2": "",
-        "CITY": "Stavern",
-        "STATE": "",
-        "POSTALCODE": "4110",
-        "COUNTRY": "Norway",
-        "TERRITORY": "EMEA",
-        "CONTACTLASTNAME": "Bergulfsen",
-        "CONTACTFIRSTNAME": "Jonas",
-        "DEALSIZE": "Medium"
+        "COUNTRY": "Norway"
       }]
     },
     {
