@@ -1,0 +1,46 @@
+.chart-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.chart-dashboard h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.ml-chart-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.ml-chart-container h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.prediction-info {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.prediction-info p {
+  font-weight: bold;
+  color: #555;
+}
+
+.prediction-probabilities {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}

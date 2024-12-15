@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./ml-chart-predictor-ui
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - ml-predictor-network
+    links:
+      - backend
+
+  backend:
+    build:
+      context: ./ml-flask-app
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - ml-predictor-network
+
+# CORS setup
+  cors:
+      build:
+          context: ./ml-flask-app/nginx
+          dockerfile: Dockerfile
+      container_name: cors
+      networks:
+         - ml-predictor-network
+      depends_on:
+          - backend
+      ports:
+          - "4545:80"
+
+networks:
+  ml-predictor-network:
+    driver: bridge
